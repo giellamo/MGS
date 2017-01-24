@@ -1,0 +1,6 @@
+message MessageVector {
+  uint32[4] vec;
+}
+
+
+

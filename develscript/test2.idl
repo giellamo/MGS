@@ -1,0 +1,16 @@
+@generate_id
+
+messageHeader {
+  int32 id;
+}
+
+message prova {  
+  int8 spare; 
+  uint32 svirgolato;
+}
+
+
+enum results  {
+ OK,
+ fault = 9
+}

@@ -1,0 +1,39 @@
+
+enum MessageType {
+  Invalid = 0,
+  Request,
+  Response
+  Sticazzi = 12,
+  Belin,
+}
+
+message UserId {
+  unsigned int8 name;
+  unsigned int8 age;
+  bool male = true;
+  MessageType wawawa;
+}
+
+message LoginRequest {
+  UserId user;
+}
+
+message LoginRequestResponse {
+  int8 retCode;
+  unsigned int32 sessionNumber;
+  bool flag = false;
+}
+
+message UserList {
+  int8[10] user;
+  bool active;
+  uint64[3] idCode;
+  bool[14] flags;
+}
+
+message SetControlParameters {
+  unsigned int32 P;
+  unsigned int32 I;
+  unsigned int32 D;
+}
+

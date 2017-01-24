@@ -1,0 +1,32 @@
+@generate_id
+@generate_size
+
+messageHeader {
+  int8 spore;
+}
+
+message prova {  
+  int8 spare; 
+}
+
+
+message TestMessage {
+  bool boolean;
+  char character;
+  int8 byte;
+  int16 word;
+  int32 integer;
+  int64 longInteger;
+  uint8 uByte;
+  uint16 uWord;
+  uint32 uInteger;
+  uint64 uLongInteger;
+  float floatingPoint;
+  double doublePrecision;
+}
+
+
+enum results  {
+ OK,
+ fault = 9
+}
